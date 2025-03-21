@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Diccionario_de_herencia
 {
-    internal class BaseVehiculo
+    class BaseVehiculo
     {
         public BaseVehiculo() { }
 
