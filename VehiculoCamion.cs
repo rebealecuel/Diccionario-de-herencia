@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Diccionario_de_herencia
 {
-    internal class VehiculoCamion
+    internal class VehiculoCamion : BaseVehiculo
     {
+        public VehiculoCamion() { }
+
+        public double CapacidadCarga {  get; set; }
+
     }
 }

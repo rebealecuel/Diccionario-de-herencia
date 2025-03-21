@@ -15,13 +15,13 @@ namespace Diccionario_de_herencia
         static void Main(string[] args)
         {
             //Rebeca Alejandra Cuellar Angel
-
+            ControlVehiculo bas = new ControlVehiculo();
             while (true)
             {
                 switch (Menun())
                 {
                     case Menu.Agregar:
-
+                        bas.AddCochee();
                         break;
                     case Menu.Mostrar:
 
