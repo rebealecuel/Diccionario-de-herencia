@@ -55,15 +55,37 @@ namespace Diccionario_de_herencia
             foreach (var co in diccionariocoche)
             {
                 Console.WriteLine($"ID: {co.Value.ID}");
+                Console.WriteLine($"Marca: {co.Value.Marca}");
+                Console.WriteLine($"Modelo: {co.Value.Modelo}");
+                Console.WriteLine($"Año: {co.Value.Año}");
+                Console.WriteLine($"Puertas: {co.Value.Puertas}");
+                Console.WriteLine($"Ventana Superior: {co.Value.VentanaTecho}");
             }
         }
-        
+        public void MostraCamion()
+        {
+            foreach (var ca in diccionariocamion)
+            {
+                Console.WriteLine($"ID: {ca.Value.ID}");
+                Console.WriteLine($"Marca: {ca.Value.Marca}");
+                Console.WriteLine($"Modelo: {ca.Value.Modelo}");
+                Console.WriteLine($"Año: {ca.Value.Año}");
+                Console.WriteLine($"Capacidad de carga: {ca.Value.CapacidadCarga}");
+            }
+        }
         public void EliminarCoche()
         {
             Console.WriteLine("Dame ID a eliminar");
             int id = Convert.ToInt32(Console.ReadLine());
 
             diccionariocoche.Remove(id);
+        }
+        public void EliminarCamion()
+        {
+            Console.WriteLine("Dame ID a eliminar");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            diccionariocamion.Remove(id);
         }
 
         public void ActualizarCoche()
