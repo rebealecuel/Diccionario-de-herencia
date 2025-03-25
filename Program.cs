@@ -24,19 +24,16 @@ namespace Diccionario_de_herencia
                         bas.AddCochee();
                         break;
                     case Menu.Mostrar:
-
-                        break;
-                    case Menu.Contar:
-
+                        bas.MostraCoche();
                         break;
                     case Menu.Actualizar:
-
+                        bas.ActualizarCoche();
                         break;
                     case Menu.Elimninar: 
-                        
+                        bas.EliminarCoche();
                         break;
                     case Menu.Salir:
-
+                        Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Opcion invalida");
