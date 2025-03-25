@@ -45,7 +45,7 @@ namespace Diccionario_de_herencia
             Console.WriteLine("Año de lanzamiento");
             vca.Año = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Cuanta carga soporta");
-            vca.CapacidadCarga = Convert.ToInt32(Console.ReadLine());
+            vca.CapacidadCarga = Convert.ToDouble(Console.ReadLine());
 
             diccionariocamion.Add(idd, new VehiculoCamion(vca.ID, vca.Marca, vca.Modelo, vca.Año, vca.CapacidadCarga));
         }
