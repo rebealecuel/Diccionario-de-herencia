@@ -76,7 +76,33 @@ namespace Diccionario_de_herencia
             Console.WriteLine("Dame nuevo ID");
             coche.Value.ID = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame marca");
-            coche.Value.ID = Console.Read();
+            coche.Value.Marca = Console.ReadLine();
+            Console.WriteLine("Dame modelo");
+            coche.Value.Modelo = Console.ReadLine();
+            Console.WriteLine("Dame año");
+            coche.Value.Año = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame numero de puertas");
+            coche.Value.Puertas = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("¿Ventana superior?");
+            coche.Value.VentanaTecho = Console.ReadLine();
+        }
+        public void ActualizarCamion()
+        {
+            Console.WriteLine("Dame ID a actualizar");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            var camion = diccionariocamion.FirstOrDefault(x => x.Value.ID == id);
+
+            Console.WriteLine("Dame nuevo ID");
+            camion.Value.ID = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame marca");
+            camion.Value.Marca = Console.ReadLine();
+            Console.WriteLine("Dame modelo");
+            camion.Value.Modelo = Console.ReadLine();
+            Console.WriteLine("Dame año");
+            camion.Value.Año = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Cuanta carga soporta");
+            camion.Value.CapacidadCarga = Convert.ToDouble(Console.ReadLine());
         }
     }
 }
