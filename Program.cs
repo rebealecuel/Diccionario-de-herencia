@@ -10,7 +10,7 @@ namespace Diccionario_de_herencia
     {
         public enum Menu
         {
-            AgregarCO = 1, AgregarCa, Mostrar, Actualizar, Elimninar, Salir
+            AgregarCO = 1, AgregarCa, MostrarCo, MostrarCa, ActualizarCo, ActualizarCa, ElimninarCo, EliminarCa, Salir
         }
         static void Main(string[] args)
         {
@@ -26,14 +26,23 @@ namespace Diccionario_de_herencia
                     case Menu.AgregarCa:
                         bas.AddCamion();
                         break;
-                    case Menu.Mostrar:
+                    case Menu.MostrarCo:
                         bas.MostraCoche();
                         break;
-                    case Menu.Actualizar:
+                    case Menu.MostrarCa:
+                        bas.MostraCamion();
+                        break;
+                    case Menu.ActualizarCo:
                         bas.ActualizarCoche();
                         break;
-                    case Menu.Elimninar: 
+                    case Menu.ActualizarCa:
+                        bas.ActualizarCamion();
+                        break;
+                    case Menu.ElimninarCo: 
                         bas.EliminarCoche();
+                        break;
+                    case Menu.EliminarCa:
+                        bas.EliminarCamion();
                         break;
                     case Menu.Salir:
                         Environment.Exit(0);
