@@ -57,10 +57,13 @@ namespace Diccionario_de_herencia
         {
             Console.WriteLine("1) Agregar Coche");
             Console.WriteLine("2) Agregar Camion");
-            Console.WriteLine("3) Mostrar");
-            Console.WriteLine("4) Actualizar");
-            Console.WriteLine("5) Eliminar");
-            Console.WriteLine("6) Salir");
+            Console.WriteLine("3) Mostrar Coche");
+            Console.WriteLine("4) Mostrar Camion");
+            Console.WriteLine("5) Actualizar Coche");
+            Console.WriteLine("6) Actualizar Camion");
+            Console.WriteLine("7) Eliminar Coche");
+            Console.WriteLine("8) Eliminar Camion");
+            Console.WriteLine("9) Salir");
             Menu opc = (Menu)Convert.ToInt32(Console.ReadLine());
             return opc;
         }
