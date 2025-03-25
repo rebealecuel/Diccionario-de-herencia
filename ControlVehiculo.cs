@@ -32,6 +32,23 @@ namespace Diccionario_de_herencia
 
             diccionariocoche.Add(id, new VehiculoCoche(vco.ID, vco.Marca, vco.Modelo, vco.Año, vco.Puertas, vco.VentanaTecho));
         }
+        public void AddCamion()
+        {
+            Console.WriteLine("Dame matricula");
+            int idd = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Dame ID");
+            vca.ID = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Nombre de la marca");
+            vca.Marca = Console.ReadLine();
+            Console.WriteLine("Nombre del modelo");
+            vca.Modelo = Console.ReadLine();
+            Console.WriteLine("Año de lanzamiento");
+            vca.Año = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Cuanta carga soporta");
+            vca.CapacidadCarga = Convert.ToInt32(Console.ReadLine());
+
+            diccionariocamion.Add(idd, new VehiculoCamion(vca.ID, vca.Marca, vca.Modelo, vca.Año, vca.CapacidadCarga));
+        }
 
         public void MostraCoche()
         {
@@ -40,6 +57,7 @@ namespace Diccionario_de_herencia
                 Console.WriteLine($"ID: {co.Value.ID}");
             }
         }
+        
         public void EliminarCoche()
         {
             Console.WriteLine("Dame ID a eliminar");
@@ -58,7 +76,7 @@ namespace Diccionario_de_herencia
             Console.WriteLine("Dame nuevo ID");
             coche.Value.ID = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Dame marca");
-            coche.Value.ID = 
+            coche.Value.ID = Console.Read();
         }
     }
 }
